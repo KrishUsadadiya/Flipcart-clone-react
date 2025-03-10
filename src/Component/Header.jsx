@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Navbar, Nav, Container, Form, Button, Badge } from "react-bootstrap";
 import { getCartDataAsync } from "../services/Action/ProductAction";
 import { auth } from "../config/firebase";
+import logo from '../image/fkheaderlogo_exploreplus-44005d.svg'
 import "./button.css"
 
 const Header = () => {
@@ -45,7 +46,7 @@ const Header = () => {
         <Navbar expand="md">
             <Container className="bg-light ">
                 <Navbar.Brand as={Link} to="/" className="text-white fw-bold fs-4">
-                    <img src="/src/image/fkheaderlogo_exploreplus-44005d.svg" alt="Logo" />
+                    <img src={logo} alt="Logo" />
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="navbar-nav" />
